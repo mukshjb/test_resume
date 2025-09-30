@@ -1,0 +1,15 @@
+docker build -t transfer-learning-gpu .
+
+
+
+docker run --gpus all -it --rm ^
+  -v "D:\\0.LatestDSCourse\\DS_course\\TransferLearning\\dataset\\PetImages:/tf/code/dataset/PetImages" ^
+  -v "D:\\0.LatestDSCourse\\DS_course\\TransferLearning\\Projects\\Project1_cat_dog\\models:/tf/code/models" ^
+  transfer-learning-gpu
+
+
+
+  docker run --gpus all -it --rm \
+  -v "D:\\0.LatestDSCourse\\DS_course\\TransferLearning\\dataset\\PetImages:/tf/code/dataset/PetImages" \
+  -v "D:\\0.LatestDSCourse\\DS_course\\TransferLearning\\Projects\\Project1_cat_dog\\models:/tf/code/models" \
+  transfer-learning-gpu

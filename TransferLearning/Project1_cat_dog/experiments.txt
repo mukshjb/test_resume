@@ -1,0 +1,58 @@
+Transfer learning experiments:
+mobilenetv2
+ 50/624 [=>............................] - ETA: 1:26 - loss: 0.1152 - accuracy: 0.9481/usr/local/lib/python3.11/dist-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+624/624 [==============================] - 216s 338ms/step - loss: 0.0631 - accuracy: 0.9767 - val_loss: 0.0319 - val_accuracy: 0.9880
+Epoch 2/6
+624/624 [==============================] - 209s 335ms/step - loss: 0.0370 - accuracy: 0.9876 - val_loss: 0.0314 - val_accuracy: 0.9888
+Epoch 3/6
+624/624 [==============================] - 181s 290ms/step - loss: 0.0313 - accuracy: 0.9891 - val_loss: 0.0358 - val_accuracy: 0.9856
+Epoch 4/6
+624/624 [==============================] - 198s 317ms/step - loss: 0.0281 - accuracy: 0.9902 - val_loss: 0.0382 - val_accuracy: 0.9872
+Epoch 5/6
+624/624 [==============================] - 188s 302ms/step - loss: 0.0246 - accuracy: 0.9926 - val_loss: 0.0342 - val_accuracy: 0.9890
+Epoch 6/6
+624/624 [==============================] - 217s 347ms/step - loss: 0.0216 - accuracy: 0.9920 - val_loss: 0.0334 - val_accuracy: 0.9882
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+156/156 [==============================] - 53s 335ms/step
+
+
+
+VGG16:
+
+warnings.warn(str(msg))
+624/624 [==============================] - 109s 169ms/step - loss: 0.7117 - accuracy: 0.9575 - val_loss: 0.0872 - val_accuracy: 0.9768
+Epoch 2/6
+624/624 [==============================] - 94s 150ms/step - loss: 0.0906 - accuracy: 0.9770 - val_loss: 0.1253 - val_accuracy: 0.9806
+Epoch 3/6
+624/624 [==============================] - 695s 1s/step - loss: 0.0650 - accuracy: 0.9835 - val_loss: 0.0655 - val_accuracy: 0.9836
+Epoch 4/6
+624/624 [==============================] - 91s 146ms/step - loss: 0.0532 - accuracy: 0.9845 - val_loss: 0.0644 - val_accuracy: 0.9822
+Epoch 5/6
+624/624 [==============================] - 101s 161ms/step - loss: 0.0526 - accuracy: 0.9863 - val_loss: 0.0842 - val_accuracy: 0.9850
+Epoch 6/6
+624/624 [==============================] - 102s 163ms/step - loss: 0.0832 - accuracy: 0.9821 - val_loss: 0.1118 - val_accuracy: 0.9830
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+156/156 [==============================] - 24s 153ms/step
+
+
+ResNet50:
+
+.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+624/624 [==============================] - 103s 158ms/step - loss: 0.0625 - accuracy: 0.9783 - val_loss: 0.0325 - val_accuracy: 0.9892
+Epoch 2/6
+624/624 [==============================] - 97s 156ms/step - loss: 0.0349 - accuracy: 0.9884 - val_loss: 0.0305 - val_accuracy: 0.9888
+Epoch 3/6
+624/624 [==============================] - 104s 167ms/step - loss: 0.0304 - accuracy: 0.9896 - val_loss: 0.0304 - val_accuracy: 0.9890
+Epoch 4/6
+624/624 [==============================] - 101s 162ms/step - loss: 0.0255 - accuracy: 0.9905 - val_loss: 0.0369 - val_accuracy: 0.9884
+Epoch 5/6
+624/624 [==============================] - 104s 166ms/step - loss: 0.0234 - accuracy: 0.9906 - val_loss: 0.0363 - val_accuracy: 0.9898
+Epoch 6/6
+624/624 [==============================] - 100s 160ms/step - loss: 0.0205 - accuracy: 0.9924 - val_loss: 0.0342 - val_accuracy: 0.9888
+/usr/local/lib/python3.11/dist-packages/keras/src/engine/training.py:3079: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+156/156 [==============================] - 28s 176ms/step
