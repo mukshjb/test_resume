@@ -1,0 +1,9 @@
+The Ames Housing dataset has over 80 features and a lot of missing values for both numeric and categorical variables. My objective was to compare different missing value handling techniques and see how they affect model performance in a regression task (predicting house prices).
+
+I implemented nine approaches — from simple methods like dropping rows/columns and filling with constants, mean, or median, to more advanced methods like KNN imputation, Iterative Imputation (MICE), and domain-specific handling (e.g., missing Alley values mapped to “NoAlley”). I also tested adding missingness indicator flags.
+
+For evaluation, I used a Linear Regression model with a fixed train-test split across all techniques. I compared performance using RMSE and R² to measure both error and explained variance.
+
+The results showed that model-based imputations like KNN and MICE performed better than basic mean/median filling. Domain-based imputations also helped, since some missing values carried real semantic meaning rather than being random.
+
+This project gave me hands-on experience with systematically handling missing data, designing reproducible pipelines, and quantitatively comparing imputation strategies using consistent evaluation metrics.
