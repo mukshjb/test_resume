@@ -1,0 +1,7 @@
+I worked on the Pima Indians Diabetes dataset, which is highly imbalanced because far fewer patients have diabetes compared to non-diabetics. The goal was to predict diabetes more reliably, especially for the minority class.
+
+I experimented with different imbalance handling techniques – undersampling, oversampling, SMOTE, class weighting, Balanced Random Forest, and Easy Ensemble. For each, I trained Logistic Regression, SVM, and XGBoost models and evaluated them using metrics like ROC–AUC, F1-score, and recall.
+
+The key outcome was that methods like SMOTE and ensemble techniques significantly improved recall for the diabetic class – in fact, recall improved by around  60% compared to baseline – without hurting overall accuracy. I also visualized performance using ROC curves to compare all approaches.
+
+This project showed me how important it is to handle class imbalance properly in real-world datasets, especially in healthcare, where missing positive cases can have serious consequences.
